@@ -14,11 +14,14 @@ $(window).on('load', function() {
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut();
-	$("#preloder").delay(400).fadeOut("slow");
+	$("#preloder").delay(0).fadeOut("slow");
 
 });
 
 (function($) {
+
+
+
 	/*------------------
 		Navigation
 	--------------------*/
@@ -46,7 +49,7 @@ $(window).on('load', function() {
 		loop: true,
 		nav: true,
 		dots: true,
-		navText: ['', '<img src="img/icons/solid-right-arrow.png">'],
+		navText: ['<img src="img/icons/solid-left-arrow.png">', '<img src="img/icons/solid-right-arrow.png">'],
 		mouseDrag: false,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
@@ -78,6 +81,8 @@ $(window).on('load', function() {
 	    topSpacing: 60,
 	    bottomSpacing: 60
 	});
+
+
 
 
 })(jQuery);
