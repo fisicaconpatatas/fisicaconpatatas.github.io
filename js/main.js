@@ -23,7 +23,7 @@ $(window).on('load', function() {
 
 	  var z, i, elmnt, file, xhttp;
 	  /* Loop through a collection of all HTML elements: */
-	  z = document.getElementsByTagName("*");
+	  z = document.getElementsByTagName("div");
 	  for (i = 0; i < z.length; i++) {
 	    elmnt = z[i];
 	    /*search for elements with a certain atrribute:*/
@@ -37,7 +37,6 @@ $(window).on('load', function() {
 	          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 	          /* Remove the attribute, and call this function once more: */
 	          elmnt.removeAttribute("w3-include-html");
-	          includeHTML();
 	        }
 	      } 
 	      xhttp.open("GET", file, true);
